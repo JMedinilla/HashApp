@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,78 +15,60 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Home_Activity extends AppCompatActivity {
 
-    EditText edit_original;
-    TextView edit_md5;
-    TextView edit_sha1;
-    TextView edit_sha2;
-    Button btnORI;
-    Button btnMD5;
-    Button btnSHA1;
-    Button btnSHA256;
-    ClipboardManager clipboard;
-    ClipData clip;
+    private EditText edtOriginal;
+    private TextView edtMD5;
+    private TextView edtSHA1;
+    private TextView edtSHA356;
+    private ClipboardManager clipboard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
-        inicializar();
-
-        suscripciones();
+        initialize();
     }
 
-    private void suscripciones() {
-        btnORI.setOnClickListener(this);
-        btnMD5.setOnClickListener(this);
-        btnSHA1.setOnClickListener(this);
-        btnSHA256.setOnClickListener(this);
+    private void sendMessage(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
 
-        edit_original.addTextChangedListener(new TextWatcher() {
+    private void initialize() {
+        edtOriginal = (EditText)findViewById(R.id.edtOriginal);
+        edtMD5 = (TextView)findViewById(R.id.edtMD5);
+        edtSHA1 = (TextView)findViewById(R.id.edtSHA1);
+        edtSHA356 = (TextView)findViewById(R.id.edtSHA256);
+
+        clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+
+        edtOriginal.setText("");
+        edtMD5.setText(convertMD5(edtOriginal.getText().toString()));
+        edtSHA1.setText(convertSHA1(edtOriginal.getText().toString()));
+        edtSHA356.setText(convertSHA256(edtOriginal.getText().toString()));
+
+        edtOriginal.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                //NONE
+                //
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                edit_md5.setText(escribirmd5(edit_original.getText().toString()));
-                edit_sha1.setText(escribirsha1(edit_original.getText().toString()));
-                edit_sha2.setText(escribirsha2(edit_original.getText().toString()));
+                edtMD5.setText(convertMD5(edtOriginal.getText().toString()));
+                edtSHA1.setText(convertSHA1(edtOriginal.getText().toString()));
+                edtSHA356.setText(convertSHA256(edtOriginal.getText().toString()));
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-                //NONE
+                //
             }
         });
     }
 
-    private void enviarMensaje(String cad) {
-        Toast.makeText(getApplicationContext(), cad, Toast.LENGTH_SHORT).show();
-    }
-
-    private void inicializar() {
-        edit_original = (EditText)findViewById(R.id.edit_original);
-        edit_md5 = (TextView)findViewById(R.id.edit_md5);
-        edit_sha1 = (TextView)findViewById(R.id.edit_sha1);
-        edit_sha2 = (TextView)findViewById(R.id.edit_sha2);
-        btnORI = (Button)findViewById(R.id.btnORI);
-        btnMD5 = (Button)findViewById(R.id.btnMD5);
-        btnSHA1 = (Button)findViewById(R.id.btnSHA1);
-        btnSHA256 = (Button)findViewById(R.id.btnSHA256);
-
-        clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-
-        edit_original.setText("");
-        edit_md5.setText(escribirmd5(edit_original.getText().toString()));
-        edit_sha1.setText(escribirsha1(edit_original.getText().toString()));
-        edit_sha2.setText(escribirsha2(edit_original.getText().toString()));
-    }
-
-    private String escribirsha2(String cadena) {
+    private String convertSHA256(String cadena) {
         return bin2hex(getHash(cadena)).toLowerCase();
     }
 
@@ -111,11 +92,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return String.format("%0" + (data.length * 2) + "X", new BigInteger(1, data));
     }
 
-    private String escribirsha1(String cadena) {
+    private String convertSHA1(String string) {
         MessageDigest digest = null;
         try {
             digest = MessageDigest.getInstance("SHA-1");
-            digest.update(cadena.getBytes("iso-8859-1"), 0, cadena.length());
+            digest.update(string.getBytes("iso-8859-1"), 0, string.length());
         } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -139,11 +120,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return buf.toString();
     }
 
-    private String escribirmd5(String cadena) {
+    private String convertMD5(String string) {
         final String MD5 = "MD5";
         try {
             MessageDigest digest = java.security.MessageDigest.getInstance(MD5);
-            digest.update(cadena.getBytes());
+            digest.update(string.getBytes());
             byte messageDigest[] = digest.digest();
 
             StringBuilder hexString = new StringBuilder();
@@ -160,31 +141,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return "";
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btnORI:
-                clip = ClipData.newPlainText("jv", edit_original.getText().toString());
+    public void getButtonClick (View view) {
+        ClipData clip;
+        switch (view.getId()) {
+            case R.id.btnOriginal:
+                clip = ClipData.newPlainText("jv", edtOriginal.getText().toString());
                 clipboard.setPrimaryClip(clip);
-                enviarMensaje("Se ha copiado la cadena original al portapapeles");
+                sendMessage(getResources().getString(R.string.original_copied));
                 break;
 
             case R.id.btnMD5:
-                clip = ClipData.newPlainText("jv", edit_md5.getText().toString());
+                clip = ClipData.newPlainText("jv", edtMD5.getText().toString());
                 clipboard.setPrimaryClip(clip);
-                enviarMensaje("Se ha copiado la cadena MD5 al portapapeles");
+                sendMessage(getResources().getString(R.string.md5_copied));
                 break;
 
             case R.id.btnSHA1:
-                clip = ClipData.newPlainText("jv", edit_sha1.getText().toString());
+                clip = ClipData.newPlainText("jv", edtSHA1.getText().toString());
                 clipboard.setPrimaryClip(clip);
-                enviarMensaje("Se ha copiado la cadena SHA-1 al portapapeles");
+                sendMessage(getResources().getString(R.string.sha1_copied));
                 break;
 
             case R.id.btnSHA256:
-                clip = ClipData.newPlainText("jv", edit_sha2.getText().toString());
+                clip = ClipData.newPlainText("jv", edtSHA356.getText().toString());
                 clipboard.setPrimaryClip(clip);
-                enviarMensaje("Se ha copiado la cadena SHA-256 al portapapeles");
+                sendMessage(getResources().getString(R.string.sha256_copied));
                 break;
         }
     }

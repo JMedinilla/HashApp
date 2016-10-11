@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="10dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.jvmed.hashapp.Home_Activity">
+
+    <TextView
+        android:typeface="normal"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/margin_bottom_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:id="@+id/txtTitleMain"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:typeface="normal"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/margin_bottom_title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/original_title"
+        android:id="@+id/txtTitleOriginal" />
+
+    <Button
+        android:onClick="getButtonClick"
+        android:layout_marginLeft="@dimen/margin_button_side"
+        android:layout_marginStart="@dimen/margin_button_side"
+        android:layout_alignBaseline="@id/txtTitleOriginal"
+        android:layout_toRightOf="@id/txtTitleOriginal"
+        android:layout_toEndOf="@id/txtTitleOriginal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/ic_menu_set_as"
+        android:id="@+id/btnOriginal" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtOriginalLayout"
+        android:layout_marginRight="@dimen/edt_margin_side"
+        android:layout_marginLeft="@dimen/edt_margin_side"
+        android:layout_marginBottom="@dimen/margin_bottom_edittext"
+        android:layout_below="@id/txtTitleOriginal"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="@string/original_edt_hint"
+            android:id="@+id/edtOriginal" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:typeface="normal"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/margin_bottom_title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtOriginalLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/md5_title"
+        android:id="@+id/txtTitleMD5" />
+
+    <Button
+        android:onClick="getButtonClick"
+        android:layout_marginLeft="@dimen/margin_button_side"
+        android:layout_marginStart="@dimen/margin_button_side"
+        android:layout_alignBaseline="@id/txtTitleMD5"
+        android:layout_toRightOf="@id/txtTitleMD5"
+        android:layout_toEndOf="@id/txtTitleMD5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/ic_menu_set_as"
+        android:id="@+id/btnMD5" />
+
+    <TextView
+        android:layout_marginRight="@dimen/edt_margin_side"
+        android:layout_marginLeft="@dimen/edt_margin_side"
+        android:layout_marginBottom="@dimen/margin_bottom_edittext"
+        style="@android:style/Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:textColor="@android:color/holo_blue_light"
+        android:id="@+id/edtMD5"
+        android:layout_below="@+id/txtTitleMD5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:typeface="normal"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/margin_bottom_title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtMD5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sha1_title"
+        android:id="@+id/txtTitleSHA1" />
+
+    <Button
+        android:onClick="getButtonClick"
+        android:layout_marginLeft="@dimen/margin_button_side"
+        android:layout_marginStart="@dimen/margin_button_side"
+        android:layout_alignBaseline="@id/txtTitleSHA1"
+        android:layout_toRightOf="@id/txtTitleSHA1"
+        android:layout_toEndOf="@id/txtTitleSHA1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/ic_menu_set_as"
+        android:id="@+id/btnSHA1" />
+
+    <TextView
+        android:layout_marginRight="@dimen/edt_margin_side"
+        android:layout_marginLeft="@dimen/edt_margin_side"
+        android:layout_marginBottom="@dimen/margin_bottom_edittext"
+        style="@android:style/Widget.EditText"
+        android:layout_below="@id/txtTitleSHA1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/edtSHA1" />
+
+    <TextView
+        android:typeface="normal"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginBottom="@dimen/margin_bottom_title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtSHA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sha256_title"
+        android:id="@+id/txtTitleSHA256" />
+
+    <Button
+        android:onClick="getButtonClick"
+        android:layout_marginLeft="@dimen/margin_button_side"
+        android:layout_marginStart="@dimen/margin_button_side"
+        android:layout_alignBaseline="@id/txtTitleSHA256"
+        android:layout_toRightOf="@id/txtTitleSHA256"
+        android:layout_toEndOf="@id/txtTitleSHA256"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/ic_menu_set_as"
+        android:id="@+id/btnSHA256" />
+
+    <TextView
+        android:layout_marginRight="@dimen/edt_margin_side"
+        android:layout_marginLeft="@dimen/edt_margin_side"
+        style="@android:style/Widget.EditText"
+        android:layout_below="@id/txtTitleSHA256"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:textColor="@android:color/holo_orange_light"
+        android:id="@+id/edtSHA256" />
+
+</RelativeLayout>

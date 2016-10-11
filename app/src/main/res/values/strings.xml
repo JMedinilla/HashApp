@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">HashApp</string>
-    <string name="sha2">SHA-256</string>
-    <string name="sha1">SHA-1</string>
-    <string name="md5">MD5</string>
-    <string name="original">Original</string>
-    <string name="tituloMain">Criptografía de reducción</string>
-    <string name="pistaOriginal">Introduce una cadena</string>
+    <string name="sha256_title">SHA-256</string>
+    <string name="sha1_title">SHA-1</string>
+    <string name="md5_title">MD5</string>
+    <string name="original_title">Original</string>
+    <string name="main_title">Cryptography reduction</string>
+    <string name="original_edt_hint">Introduce a string</string>
+    <string name="original_copied">Original string in the clipboard</string>
+    <string name="md5_copied">MD5 string in the clipboard</string>
+    <string name="sha1_copied">SHA-1 string in the clipboard</string>
+    <string name="sha256_copied">SHA-256 string in the clipboard</string>
+    <string name="splash_screen_logo">splash_screen_logo</string>
 </resources>
