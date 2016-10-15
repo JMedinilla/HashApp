@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HashApp</string>
+    <string name="main_title">Criptografía de reducción</string>
+    <string name="md5_copied">Cadena MD5 en el portapapeles</string>
+    <string name="md5_title">MD5</string>
+    <string name="original_copied">Cadena original en el portapapeles</string>
+    <string name="original_edt_hint">Introduce una cadena</string>
+    <string name="original_title">Original</string>
+    <string name="sha1_copied">Cadena SHA-1 en el portapapeles</string>
+    <string name="sha1_title">SHA-1</string>
+    <string name="sha256_copied">Cadena SHA-256 en el portapapeles</string>
+    <string name="sha256_title">SHA-256</string>
+    <string name="splash_screen_logo">splash_screen_logo</string>
+</resources>

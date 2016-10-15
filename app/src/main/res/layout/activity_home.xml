@@ -9,7 +9,8 @@
     android:paddingBottom="20dp"
     android:paddingTop="10dp"
     android:background="@color/colorPrimary"
-    tools:context="com.jvmed.hashapp.Home_Activity">
+    tools:context="com.jvmed.hashapp.Home_Activity"
+    android:id="@+id/main_layout">
 
     <TextView
         android:typeface="normal"
