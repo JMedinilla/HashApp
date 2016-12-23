@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\medin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\pre-dexed\release\support-annotations-23.4.0_ebca2e00d32823dfad9ee7c20f3d9ea00b1205a4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_ebca2e00d32823dfad9ee7c20f3d9ea00b1205a4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_ad0a32bc790cb5b3cdc67a4bead8aba0260885f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\pre-dexed\release\internal_impl-23.4.0_43f0d5c113a723e621cd2cc256d09e2c035f3aba.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_43f0d5c113a723e621cd2cc256d09e2c035f3aba\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-23.4.0_fc4fccc711311e36d3316118040a69fda022ce0e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a1eba9df18d289cfb7cc02495c54e7a50bca46c9">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_76946d2670253f8a2674fb8eeb863fb2a86aa913\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_fc4fccc711311e36d3316118040a69fda022ce0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_e0111bb0c2df19a21f41759241311b27dcd1a179\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-23.4.0_e0111bb0c2df19a21f41759241311b27dcd1a179.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_e460faeeae7c83dfd1d469f01170734688ec4102\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\pre-dexed\release\com.android.support-design-23.4.0_e460faeeae7c83dfd1d469f01170734688ec4102.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8e2fdc8726673c2e375bfb989c4114dc9e8021e6">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e1df984509307e5abd26380af443f3efe8559b4d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.4.0_ad0a32bc790cb5b3cdc67a4bead8aba0260885f7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_db9e7166f57afdc08c31f06f971590de964441a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-23.4.0_44430d57419a66048c139b1ba8635483539e86cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.4.0_db9e7166f57afdc08c31f06f971590de964441a5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\medin\Google Drive\Android Projects\Repositorios\Personal\HashApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_44430d57419a66048c139b1ba8635483539e86cd\classes.dex" />
+    </item>
+
+</items>
